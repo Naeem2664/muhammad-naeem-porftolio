@@ -1,0 +1,98 @@
+[
+	{
+		"project": "BR Collins.",
+		"url": "",
+		"repo": "Private",
+		"descriptionTitle": "D2C ecommerce site for course materials",
+		"description": "built with the MERN stack and integrated with third party APIs.",
+		"imageOptions": [],
+		"images": [
+			{ "key": "mock-stack", "hover": "right", "h": "1200", "w": "556", "url": "/img/msc-mock_stack/03.png" },
+			{ "key": "mock-stack", "hover": "right", "h": "1200", "w": "556", "url": "/img/msc-mock_stack/02.png" },
+			{ "key": "mock-stack", "hover": "left", "h": "1200", "w": "556", "url": "/img/msc-mock_stack/01.png" }
+		],
+		"stack": [
+			{ "key": "mongodb", "name": "MongoDB", "type": "devicon" },
+			{ "key": "typescript", "name": "TypeScript", "type": "devicon" },
+			{ "key": "html5", "name": "HTML5", "type": "devicon" },
+			{ "key": "css3", "name": "CSS3", "type": "devicon" },
+			{ "key": "git", "name": "Git(Hub)", "type": "devicon" },
+			{ "key": "webpack", "name": "Webpack", "type": "devicon" },
+			{ "key": "nodejs", "name": "Node.js", "type": "devicon" },
+			{ "key": "express", "name": "Express.js", "type": "custom", "url": "/img/logos/express.svg" },
+			{ "key": "nextjs", "name": "Next.js", "type": "devicon" },
+			{ "key": "redux", "name": "Redux", "type": "custom", "url": "/img/logos/redux.svg" },
+			{ "key": "sass", "name": "SCSS", "type": "devicon" },
+			{ "key": "stripe", "name": "Stripe", "type": "custom", "url": "/img/logos/stripe.svg" }
+		]
+	},
+	{
+		"project": "Company Books",
+		"url": "",
+		"repo": "Private",
+		"descriptionTitle": "A full featured business SaaS",
+		"description": "built with the MERN stack and integrated with third party APIs.",
+		"imageOptions": [
+			{ "key": "size", "value": "large" }
+		],
+		"images": [
+			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556", "url": "/img/portfolio-mock_single.png" }
+		],
+		"stack": [
+			{ "key": "nextjs", "name": "Next.js", "type": "devicon" },
+			{ "key": "react", "name": "React", "type": "devicon" },
+			{ "key": "nodejs", "name": "Node.js", "type": "devicon" },
+			{ "key": "mongodb", "name": "MongoDB", "type": "devicon" },
+			{ "key": "typescript", "name": "TypeScript", "type": "devicon" },
+			{ "key": "tailwindcss", "name": "TailwindCSS", "type": "devicon" },
+			{ "key": "redux", "name": "Redux", "type": "custom", "url": "/img/logos/redux.svg" },
+			{ "key": "stripe", "name": "Stripe", "type": "custom", "url": "/img/logos/stripe.svg" },
+			{ "key": "html5", "name": "HTML5", "type": "devicon" },
+			{ "key": "css3", "name": "CSS3", "type": "devicon" },
+			{ "key": "git", "name": "Git(Hub)", "type": "devicon" },
+			{ "key": "webpack", "name": "Webpack", "type": "devicon" },
+			{ "key": "express", "name": "Express.js", "type": "custom", "url": "/img/logos/express.svg" }
+		]
+	},
+	{
+		"project": "LeafEM",
+		"url": "",
+		"repo": "Private",
+		"descriptionTitle": "Admin panel for a plant care service platform",
+		"description": "Developed as a solo project, featuring modules for Users, Appointments, Transactions, Chats, Reviews, Coupons, and more.",
+		"imageOptions": [],
+		"images": [
+			{ "key": "leafem", "hover": "right", "h": "800", "w": "556", "url": "" }
+		],
+		"stack": [
+			{ "key": "nextjs", "name": "Next.js", "type": "devicon" },
+			{ "key": "react", "name": "React", "type": "devicon" },
+			{ "key": "nodejs", "name": "Node.js", "type": "devicon" },
+			{ "key": "mongodb", "name": "MongoDB", "type": "devicon" },
+			{ "key": "typescript", "name": "TypeScript", "type": "devicon" },
+			{ "key": "mui", "name": "Material UI", "type": "devicon" },
+			{ "key": "redux", "name": "Redux", "type": "custom", "url": "/img/logos/redux.svg" },
+			{ "key": "express", "name": "Express.js", "type": "custom", "url": "/img/logos/express.svg" }
+		]
+	},
+	{
+		"project": "QuirkCart",
+		"url": "",
+		"repo": "Private",
+		"descriptionTitle": "Final Year Project – E-commerce platform",
+		"description": "A scalable ecommerce platform built as a university FYP. Features product catalog, cart, checkout, and payment integration.",
+		"imageOptions": [],
+		"images": [
+			{ "key": "quirkcart", "hover": "left", "h": "800", "w": "556", "url": "" }
+		],
+		"stack": [
+			{ "key": "react", "name": "React", "type": "devicon" },
+			{ "key": "nodejs", "name": "Node.js", "type": "devicon" },
+			{ "key": "mongodb", "name": "MongoDB", "type": "devicon" },
+			{ "key": "express", "name": "Express.js", "type": "custom", "url": "/img/logos/express.svg" },
+			{ "key": "redux", "name": "Redux", "type": "custom", "url": "/img/logos/redux.svg" },
+			{ "key": "stripe", "name": "Stripe", "type": "custom", "url": "/img/logos/stripe.svg" },
+			{ "key": "git", "name": "Git(Hub)", "type": "devicon" }
+		]
+	}
+]
