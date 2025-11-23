@@ -1,32 +1,34 @@
 {
 	"intro": {
-		"start": "const Naeem = ( name, passion ) =>",
-		"end": "Hello, my name is",
-		"speed": 60,
-		"deletionSpeed": 80,
-		"wrapper": "h2",
-		"startDelay": 1000,
-		"deleteDelay": 3000,
-		"restartDelay": 12000
+	  "start": "const Naeem = (name, role) =>",
+	  "end": "Hi, I’m",
+	  "speed": 60,
+	  "deletionSpeed": 80,
+	  "wrapper": "h2",
+	  "startDelay": 1000,
+	  "deleteDelay": 3000,
+	  "restartDelay": 12000
 	},
-
+  
 	"header": {
-		"name": "Muhammad Naeem.",
-		"usp": "I design and build meaningful experiences."
+	  "name": "Muhammad Naeem.",
+	  "usp": "Full Stack Developer focused on shipping real, scalable products."
 	},
-
-	"paragraph": "I am a passionate and dedicated Full Stack Developer with expertise in building scalable, user-friendly web applications. Proficient in React.js, Node.js, Express.js, and MongoDB, I specialize in developing seamless end-to-end solutions. My focus is on writing clean, efficient code and integrating modern technologies to deliver applications that are not only functional but also optimized for performance and user experience.",
-
+  
+	"paragraph": "I build production-grade web apps, dashboards, and backend systems using React, Next.js, Node.js, Express, MongoDB, Supabase, Strapi, Firebase, and more, with a focus on clean, maintainable, and efficient code. I focus on solving real business problems—building fast MVPs for startups, improving existing systems, and delivering clean, maintainable, and scalable code. I’m comfortable taking a project from idea to deployment, collaborating with teams, and shipping features with speed and reliability.",
+  
 	"buttons": {
-		"primary": {
-			"title": "Contact Me",
-			"url": "",
-			"leaveSite": false
-		},
-		"secondary": {
-			"title": "LinkedIn",
-			"url": "https://www.linkedin.com/in/muhammad-naeem-1b2b33219/",
-			"leaveSite": "true"
-		}
+		
+	  "primary": {
+		"title": "Email Me",
+		"url": "https://wa.me/923032664863",
+		"leaveSite": false
+	  },
+	  "secondary": {
+		"title": "LinkedIn",
+		"url": "https://www.linkedin.com/in/muhammad-naeem-1b2b33219/",
+		"leaveSite": "true"
+	  }
 	}
-}
+  }
+  

@@ -1,98 +1,178 @@
 [
 	{
-		"project": "BR Collins.",
-		"url": "",
+		"project": "NED Tech",
+		"url": "https://app.nedtech.ai/",
 		"repo": "Private",
-		"descriptionTitle": "D2C ecommerce site for course materials",
-		"description": "built with the MERN stack and integrated with third party APIs.",
+		"descriptionTitle": "All-in-one AI-powered marketing SaaS",
+		"description": "A large-scale SaaS for email marketing, cold outreach, social media scheduling, ecommerce automation, Shopify store creation, and AI-generated content — built using React, Tailwind, Express, MongoDB and powered by Claude API.",
 		"imageOptions": [],
 		"images": [
-			{ "key": "mock-stack", "hover": "right", "h": "1200", "w": "556", "url": "/img/msc-mock_stack/03.png" },
-			{ "key": "mock-stack", "hover": "right", "h": "1200", "w": "556", "url": "/img/msc-mock_stack/02.png" },
-			{ "key": "mock-stack", "hover": "left", "h": "1200", "w": "556", "url": "/img/msc-mock_stack/01.png" }
+		  { "key": "nedtech", "hover": "left", "h": "500", "w": "500", "url": "/img/msc-mock_stack/nedtech.png" }
 		],
 		"stack": [
-			{ "key": "mongodb", "name": "MongoDB", "type": "devicon" },
-			{ "key": "typescript", "name": "TypeScript", "type": "devicon" },
-			{ "key": "html5", "name": "HTML5", "type": "devicon" },
-			{ "key": "css3", "name": "CSS3", "type": "devicon" },
-			{ "key": "git", "name": "Git(Hub)", "type": "devicon" },
-			{ "key": "webpack", "name": "Webpack", "type": "devicon" },
-			{ "key": "nodejs", "name": "Node.js", "type": "devicon" },
-			{ "key": "express", "name": "Express.js", "type": "custom", "url": "/img/logos/express.svg" },
-			{ "key": "nextjs", "name": "Next.js", "type": "devicon" },
-			{ "key": "redux", "name": "Redux", "type": "custom", "url": "/img/logos/redux.svg" },
-			{ "key": "sass", "name": "SCSS", "type": "devicon" },
-			{ "key": "stripe", "name": "Stripe", "type": "custom", "url": "/img/logos/stripe.svg" }
+		  { "key": "react", "name": "React", "type": "devicon" },
+		  { "key": "tailwindcss", "name": "TailwindCSS", "type": "devicon" },
+		  { "key": "nodejs", "name": "Node.js", "type": "devicon" },
+		  { "key": "mongodb", "name": "MongoDB", "type": "devicon" },
+		  { "key": "express", "name": "Express.js", "type": "custom", "url": "/img/logos/express.svg" },
+		  { "key": "react-query", "name": "Tanstack Query", "type": "custom", "url": "/img/logos/express.svg" },
+		  { "key": "claude", "name": "Claude API", "type": "custom", "url": "/img/logos/claude.svg" }
 		]
-	},
-	{
-		"project": "Company Books",
-		"url": "",
+	  },
+	
+	  {
+		"project": "GeoEstate",
+		"url": "http://app.geoestate.ai/",
 		"repo": "Private",
-		"descriptionTitle": "A full featured business SaaS",
-		"description": "built with the MERN stack and integrated with third party APIs.",
-		"imageOptions": [
-			{ "key": "size", "value": "large" }
-		],
+		"descriptionTitle": "Real-estate discovery and expose generator",
+		"description": "A real-estate data platform for Spain that allows users to draw regions on a map and view scraped listings from Idealista, Fotocasa, and other portals. I worked on the expose generation system, template builder, and proxy handling to bypass image restrictions.",
+		"imageOptions": [],
 		"images": [
-			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556", "url": "/img/portfolio-mock_single.png" }
+		  { "key": "geoestate", "hover": "right", "h": "500", "w": "500", "url": "/img/msc-mock_stack/GeoEstate.png" }
+		],
+		"stack": [
+		  { "key": "react", "name": "React", "type": "devicon" },
+		  { "key": "react-pdf", "name": "React PDF", "type": "devicon" },
+		  { "key":"puppeter","name":"Puppeter","type":"custom","url":""}
+		]
+	  },
+	  {
+		"project": "Airdrops Alert",
+		"url": "https://airdropsalert.vercel.app/",
+		"repo": "Private",
+		"descriptionTitle": "Crypto airdrop intelligence platform",
+		"description": "A Next.js + Supabase platform that provides real-time data and insights for new and trending crypto airdrops. Includes filtering, search, live status updates, and dynamic UI built with MUI.",
+		"imageOptions": [],
+		"images": [
+		  { "key": "airdrops", "hover": "right", "h": "500", "w": "500", "url": "/img/msc-mock_stack/airdropsalert.png" }
+		],
+		"stack": [
+		  { "key": "nextjs", "name": "Next.js", "type": "devicon" },
+		  { "key": "mui", "name": "Material UI", "type": "devicon" },
+		  { "key": "supabase", "name": "Supabase", "type": "custom", "url": "/img/logos/supabase.svg" },
+		  { "key": "react-query", "name": "Tanstack Query", "type": "custom", "url": "/img/logos/express.svg" },
+		  { "key": "axios", "name": "Axios", "type": "custom", "url": "/img/logos/express.svg" },
+		  { "key": "typescript", "name": "TypeScript", "type": "devicon" }
+		]
+	  },
+	
+	  
+	
+	  {
+		"project": "IPTV UK",
+		"url": "https://iptv-pied-tau.vercel.app/",
+		"repo": "Private",
+		"descriptionTitle": "Subscription sales website for Firestick IPTV",
+		"description": "A simple, high-conversion landing + checkout website for selling IPTV subscriptions in the UK. Focused on clean UI, fast performance, and easy subscription flow.",
+		"imageOptions": [],
+		"images": [
+		  { "key": "iptv", "hover": "left", "h": "500", "w": "500", "url": "/img/msc-mock_stack/iptv.png" }
 		],
 		"stack": [
 			{ "key": "nextjs", "name": "Next.js", "type": "devicon" },
-			{ "key": "react", "name": "React", "type": "devicon" },
-			{ "key": "nodejs", "name": "Node.js", "type": "devicon" },
-			{ "key": "mongodb", "name": "MongoDB", "type": "devicon" },
-			{ "key": "typescript", "name": "TypeScript", "type": "devicon" },
 			{ "key": "tailwindcss", "name": "TailwindCSS", "type": "devicon" },
-			{ "key": "redux", "name": "Redux", "type": "custom", "url": "/img/logos/redux.svg" },
-			{ "key": "stripe", "name": "Stripe", "type": "custom", "url": "/img/logos/stripe.svg" },
-			{ "key": "html5", "name": "HTML5", "type": "devicon" },
-			{ "key": "css3", "name": "CSS3", "type": "devicon" },
-			{ "key": "git", "name": "Git(Hub)", "type": "devicon" },
-			{ "key": "webpack", "name": "Webpack", "type": "devicon" },
-			{ "key": "express", "name": "Express.js", "type": "custom", "url": "/img/logos/express.svg" }
+			{ "key": "supabase", "name": "Supabase", "type": "custom", "url": "/img/logos/supabase.svg" },
+			{ "key": "react-query", "name": "Tanstack Query", "type": "custom", "url": "/img/logos/express.svg" },
+			{ "key": "axios", "name": "Axios", "type": "custom", "url": "/img/logos/express.svg" },
+			{ "key": "typescript", "name": "TypeScript", "type": "devicon" }
 		]
-	},
+	  },
 	{
-		"project": "LeafEM",
-		"url": "",
-		"repo": "Private",
-		"descriptionTitle": "Admin panel for a plant care service platform",
-		"description": "Developed as a solo project, featuring modules for Users, Appointments, Transactions, Chats, Reviews, Coupons, and more.",
-		"imageOptions": [],
-		"images": [
-			{ "key": "leafem", "hover": "right", "h": "800", "w": "556", "url": "" }
-		],
-		"stack": [
-			{ "key": "nextjs", "name": "Next.js", "type": "devicon" },
-			{ "key": "react", "name": "React", "type": "devicon" },
-			{ "key": "nodejs", "name": "Node.js", "type": "devicon" },
-			{ "key": "mongodb", "name": "MongoDB", "type": "devicon" },
-			{ "key": "typescript", "name": "TypeScript", "type": "devicon" },
-			{ "key": "mui", "name": "Material UI", "type": "devicon" },
-			{ "key": "redux", "name": "Redux", "type": "custom", "url": "/img/logos/redux.svg" },
-			{ "key": "express", "name": "Express.js", "type": "custom", "url": "/img/logos/express.svg" }
-		]
+	  "project": "BR Collins.",
+	  "url": "https://br-collins.vercel.app/",
+	  "repo": "Private",
+	  "descriptionTitle": "D2C ecommerce site for course materials",
+	  "description": "A complete MERN-powered ecommerce platform integrated with third-party APIs, featuring product listings, carts, payments, and role-based access.",
+	  "imageOptions": [],
+	  "images": [
+		{ "key": "mock-stack", "hover": "right", "h": "500", "w": "500", "url": "/img/msc-mock_stack/BR-Collins.png" }
+	  ],
+	  "stack": [
+		{ "key": "mongodb", "name": "MongoDB", "type": "devicon" },
+		{ "key": "typescript", "name": "TypeScript", "type": "devicon" },
+		{ "key": "html5", "name": "HTML5", "type": "devicon" },
+		{ "key": "css3", "name": "CSS3", "type": "devicon" },
+		{ "key": "git", "name": "Git(Hub)", "type": "devicon" },
+		{ "key": "webpack", "name": "Webpack", "type": "devicon" },
+		{ "key": "nodejs", "name": "Node.js", "type": "devicon" },
+		{ "key": "express", "name": "Express.js", "type": "custom", "url": "/img/logos/express.svg" },
+		{ "key": "nextjs", "name": "Next.js", "type": "devicon" },
+		{ "key": "redux", "name": "Redux", "type": "custom", "url": "/img/logos/redux.svg" },
+		{ "key": "sass", "name": "SCSS", "type": "devicon" },
+		{ "key": "stripe", "name": "Stripe", "type": "custom", "url": "/img/logos/stripe.svg" }
+	  ]
 	},
+  
 	{
-		"project": "QuirkCart",
-		"url": "",
-		"repo": "Private",
-		"descriptionTitle": "Final Year Project – E-commerce platform",
-		"description": "A scalable ecommerce platform built as a university FYP. Features product catalog, cart, checkout, and payment integration.",
-		"imageOptions": [],
-		"images": [
-			{ "key": "quirkcart", "hover": "left", "h": "800", "w": "556", "url": "" }
-		],
-		"stack": [
-			{ "key": "react", "name": "React", "type": "devicon" },
-			{ "key": "nodejs", "name": "Node.js", "type": "devicon" },
-			{ "key": "mongodb", "name": "MongoDB", "type": "devicon" },
-			{ "key": "express", "name": "Express.js", "type": "custom", "url": "/img/logos/express.svg" },
-			{ "key": "redux", "name": "Redux", "type": "custom", "url": "/img/logos/redux.svg" },
-			{ "key": "stripe", "name": "Stripe", "type": "custom", "url": "/img/logos/stripe.svg" },
-			{ "key": "git", "name": "Git(Hub)", "type": "devicon" }
-		]
+	  "project": "Company Books",
+	  "url": "https://company-books-frontend.vercel.app/",
+	  "repo": "Private",
+	  "descriptionTitle": "A full featured business SaaS",
+	  "description": "A production-grade SaaS for managing inventory, orders, invoices, users, and business operations. Fully powered by MERN with integrations to third-party APIs.",
+	  "imageOptions": [
+		{ "key": "size", "value": "large" }
+	  ],
+	  "images": [
+		{ "key": "portfolio", "hover": "left", "h": "500", "w": "500", "url": "/img/msc-mock_stack/company-books-frontend.png" }
+	  ],
+	  "stack": [
+		{ "key": "nextjs", "name": "Next.js", "type": "devicon" },
+		{ "key": "react", "name": "React", "type": "devicon" },
+		{ "key": "nodejs", "name": "Node.js", "type": "devicon" },
+		{ "key": "mongodb", "name": "MongoDB", "type": "devicon" },
+		{ "key": "typescript", "name": "TypeScript", "type": "devicon" },
+		{ "key": "tailwindcss", "name": "TailwindCSS", "type": "devicon" },
+		{ "key": "redux", "name": "Redux", "type": "custom", "url": "/img/logos/redux.svg" },
+		{ "key": "stripe", "name": "Stripe", "type": "custom", "url": "/img/logos/stripe.svg" },
+		{ "key": "html5", "name": "HTML5", "type": "devicon" },
+		{ "key": "css3", "name": "CSS3", "type": "devicon" },
+		{ "key": "git", "name": "Git(Hub)", "type": "devicon" },
+		{ "key": "webpack", "name": "Webpack", "type": "devicon" },
+		{ "key": "express", "name": "Express.js", "type": "custom", "url": "/img/logos/express.svg" }
+	  ]
+	},
+  
+	{
+	  "project": "LeafEM",
+	  "url": "https://leafem-admin.vercel.app/",
+	  "repo": "Private",
+	  "descriptionTitle": "Admin panel for a plant care service platform",
+	  "description": "A complete admin dashboard built solo, featuring modules for Users, Appointments, Transactions, Chats, Reviews, Coupons, Reporting, and more.",
+	  "imageOptions": [],
+	  "images": [
+		{ "key": "leafem", "hover": "right", "h": "500", "w": "500", "url": "/img/msc-mock_stack/leafem-admin.png" }
+	  ],
+	  "stack": [
+		{ "key": "nextjs", "name": "Next.js", "type": "devicon" },
+		{ "key": "react", "name": "React", "type": "devicon" },
+		{ "key": "nodejs", "name": "Node.js", "type": "devicon" },
+		{ "key": "mongodb", "name": "MongoDB", "type": "devicon" },
+		{ "key": "typescript", "name": "TypeScript", "type": "devicon" },
+		{ "key": "mui", "name": "Material UI", "type": "devicon" },
+		{ "key": "redux", "name": "Redux", "type": "custom", "url": "/img/logos/redux.svg" },
+		{ "key": "express", "name": "Express.js", "type": "custom", "url": "/img/logos/express.svg" }
+	  ]
+	},
+  
+	{
+	  "project": "QuirkCart",
+	  "url": "",
+	  "repo": "Private",
+	  "descriptionTitle": "Final Year Project – E-commerce platform",
+	  "description": "A full ecommerce platform featuring product catalog, cart, authentication, checkout, and Stripe payments. Designed and built as a university FYP.",
+	  "imageOptions": [],
+	  "images": [
+		{ "key": "quirkcart", "hover": "left", "h": "500", "w": "500", "url": "/img/msc-mock_stack/Quirk-Cart.jpg" }
+	  ],
+	  "stack": [
+		{ "key": "react", "name": "React", "type": "devicon" },
+		{ "key": "nodejs", "name": "Node.js", "type": "devicon" },
+		{ "key": "mongodb", "name": "MongoDB", "type": "devicon" },
+		{ "key": "express", "name": "Express.js", "type": "custom", "url": "/img/logos/express.svg" },
+		{ "key": "redux", "name": "Redux", "type": "custom", "url": "/img/logos/redux.svg" },
+		{ "key": "stripe", "name": "Stripe", "type": "custom", "url": "/img/logos/stripe.svg" },
+		{ "key": "git", "name": "Git(Hub)", "type": "devicon" }
+	  ]
 	}
-]
+  ]
+  

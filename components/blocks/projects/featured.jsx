@@ -44,6 +44,9 @@ export default function FeaturedProject({ content }, index) {
 					<div className={css.description}>
 						<p><strong>{descriptionTitle}</strong> {description}</p>
 					</div>
+					<div>
+						<a href={url} rel="noreferrer" target="_blank">Visit Site <Icon icon={[ 'far', 'arrow-up-right-from-square' ]} /></a>
+					</div>
 					<div className={css.stackContainer}>
 						<Badges list={stack} block="stack" fullContainer={false} color={false} />
 					</div>
@@ -51,16 +54,16 @@ export default function FeaturedProject({ content }, index) {
 				</div>
 			</div>
 
-			<div className={css.imageContainer}>
-				<span className={`${css.imageAnimationContainer}`}>
+			<div className={css.imageContainer} style={{padding:'20px',borderRadius:'2rem'}}>
+				<span style={{padding:'10px'}} >
 					{ images.map( ({key, url, hover, h, w }, index) => {
 						hover = ( hover === 'left' ) ? hoverLeft : hoverRight
 						return (
-							<m.div key={`${index}-${key}`} variants={item}>
-								<m.div variants={hover}>
-									<Image src={url} alt="x" height={h} width={w} />
-								</m.div>
-							</m.div>
+							<div key={`${index}-${key}`} variants={item}>
+								<div>
+									<Image src={url} alt="x" height={h} width={w} style={{borderRadius:'2rem'}} />
+								</div>
+							</div>
 						)}
 					) }
 				</span>

@@ -31,34 +31,8 @@ export default function Footer() {
 	return (
 		<footer className={css.container}>
 			<Container spacing={['verticalXXLrg', 'bottomLrg']}>
-				<section className={css.sections}>
-					<ul className={css.thanks}>
-						<li><h4>Acknowledgments</h4></li>
-						{
-						content.acknowledgments.map( ({ person, link, note }, index) => {
-							return (
-								<li key={index}>
-									<a href={link} rel="noreferrer" target="_blank">{person} <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} /></a>
-									<p>{note}</p>
-								</li>
-							)
-						})
-						}
-					</ul>
-					<ul className={css.links}>
-						<li><h4>Links</h4></li>
-						{
-						content.links.map( ({ person, link, note }, index) => {
-							return (
-								<li key={index}>
-									<a href={link} rel="noreferrer" target="_blank">{person} <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} /></a>
-									<p>{note}</p>
-								</li>
-							)
-						})
-						}
-					</ul>
-					<ul className={css.social}>
+				<section style={{display:'flex',justifyContent:'center',alignContent:'center'}}>
+					<ul style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
 						<li><h4>Social</h4></li>
 						<li className={css.socialList}>
 							{

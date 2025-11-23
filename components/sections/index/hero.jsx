@@ -56,12 +56,17 @@ export default function Hero() {
 				<section>
 					<button	className={`button ${button.primary}`}
 							onClick={ () => window.location = 'mailto:m.naeem.4863@gmail.com' } >
-						{content.buttons.primary.title}
+						{content.buttons.primary.title} <Icon icon={['fas', 'envelope']} />
 					</button>
-					<button className={`button ${button.secondary} leaveSite`}
+					<button className={`button ${button.primary}`}
+							onClick={ ()=> window.open("https://wa.me/923032664863", "_blank") } >
+								WhatsApp <Icon icon={['fab', 'whatsapp']} />
+					</button>
+					<button className={`button ${button.secondary}`}
 							onClick={ ()=> window.open("https://www.linkedin.com/in/muhammad-naeem-1b2b33219/", "_blank") } >
-						{content.buttons.secondary.title}
+						{content.buttons.secondary.title} <Icon icon={['fab', 'linkedin']} />
 					</button>
+
 				</section>
 			</Container>
 			<HeroBg theme="bg-color-1" />
