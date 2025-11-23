@@ -9,7 +9,6 @@ import Container from "../../structure/container";
 
 // Section general blocks
 import SectionTitle from "../../blocks/section.title.block";
-import SectionGridBg from "../../blocks/section.grid.block";
 
 // Career scss
 import career from "../../../styles/sections/index/career.module.scss";
