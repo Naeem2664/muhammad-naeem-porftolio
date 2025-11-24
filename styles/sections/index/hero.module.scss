@@ -1,77 +1,240 @@
 @import '../../scss/_mixins';
 
-//global.module.scss
+// Main section - FIXED VERSION
 .section {
+	position: relative;
 	border-bottom: 1px solid var(--primary-dark);
-	
-	max-height: 1440px;
-	height: 100vh;
+	min-height: 100vh;
+	height: auto;
+	display: flex;
+	align-items: center;
 	justify-content: center;
+	overflow: visible !important;
+	padding: 0;
+	margin: 0;
 	
-	> .container {
-		height: fit-content;
-	}
-	
-	.preHeader {
-		color: var(--secondary);
-		font-family: var(--font-accent);
-		font-size: 1.2rem;
-		font-weight: 400;
-		margin: 1rem 0;
-	}
-	
-	.header {
-		color: var(--primary-bright);
-		font-family: var(--font-sans);
-		font-size: 5rem;
-		margin: 0;
-	}
-	
-	.primaryDim {
-		color: var(--primary-dim);
-	}
-	
-	.primaryBright {
-		color: var(--primary);
-	}
-
-	.tempBright {
-		font-size: .875rem;
-		width: 60%;
-	}
-
-	.gitBadges {
-		position: relative;
-		display: flex;
-		gap: .5rem;
-		flex-wrap: wrap;
-		height: 1rem;
-		img {
-			height: 16px;
-			width: fit-content;
-			border-radius: .25rem;
-		}
-	}
-
+	// Ensure it takes full viewport
 	@include media($max: $mobile) {
-		.preHeader {
-			font-size: 1rem;
-		}
-		.header {
-			font-size: 2.9rem;
-		}
-		.tempBright {
-			width: 100%;
-			padding-right: 1rem;
-		}
-		button {
-			font-size: .875rem;
-			padding: 0.75rem 2rem;
-		}
+		min-height: 100vh;
+		height: auto;
+		align-items: flex-start;
+		padding-top: 3rem;
 	}
 }
 
-// Backgrounds
+.backgroundWrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 2rem 0;
+	position: relative;
+	z-index: 2;
+	
+	@include media($max: $mobile) {
+		padding: 1rem 0;
+		height: auto;
+	}
+}
+
+// Content wrapper - KEEP LEFT ALIGNED
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	width: 100%;
+	gap: 2rem;
+	min-height: 50vh;
+	position: relative;
+	z-index: 3;
+	
+	@include media($max: $mobile) {
+		align-items: flex-start; // Keep left aligned
+		text-align: left; // Keep text left aligned
+		gap: 1.5rem;
+		padding: 0 1.5rem;
+		min-height: auto;
+		justify-content: flex-start;
+		margin-top: 1rem;
+	}
+}
+
+// Typing animation container
+.typingContainer {
+	min-height: 2rem;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	
+	@include media($max: $mobile) {
+		min-height: 1.75rem;
+		justify-content: flex-start; // Keep left aligned
+		margin-bottom: 0.5rem;
+		text-align: left;
+	}
+}
+
+.preHeader {
+	color: var(--secondary);
+	font-family: var(--font-accent);
+	font-size: 1.2rem;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	line-height: 1.4;
+	text-align: left;
+	
+	@include media($max: $mobile) {
+		font-size: 1rem;
+		text-align: left; // Keep left aligned
+		width: 100%;
+		justify-content: flex-start;
+	}
+}
+
+// Header section
+.headerSection {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	width: 100%;
+	align-items: flex-start;
+	
+	@include media($max: $mobile) {
+		align-items: flex-start; // Keep left aligned
+		gap: 0.5rem;
+		margin: 0.5rem 0;
+		text-align: left;
+	}
+}
+
+.header {
+	color: var(--primary-bright);
+	font-family: var(--font-sans);
+	font-size: 4rem;
+	margin: 0;
+	line-height: 1.1;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	text-align: left;
+	
+	@include media($max: $mobile) {
+		font-size: 2.5rem;
+		line-height: 1.2;
+		text-align: left; // Keep left aligned
+		width: 100%;
+	}
+}
+
+.primaryDim {
+	color: var(--primary-dim);
+}
+
+.primaryBright {
+	color: var(--primary);
+}
+
+// Paragraph section
+.paragraphSection {
+	width: 100%;
+	text-align: left;
+	
+	@include media($max: $mobile) {
+		display: flex;
+		justify-content: flex-start;
+		margin: 0.5rem 0;
+		text-align: left; // Keep left aligned
+	}
+}
+
+.subtitle {
+	font-size: 1.25rem;
+	line-height: 1.6;
+	margin: 0;
+	text-align: left;
+	
+	@include media($max: $mobile) {
+		font-size: 1.1rem;
+		line-height: 1.5;
+		text-align: left; // Keep left aligned
+		width: 100%;
+	}
+}
+
+// Button section
+.buttonSection {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	margin-top: 1.5rem;
+	justify-content: flex-start;
+	
+	@include media($max: $mobile) {
+		justify-content: flex-start; // Keep left aligned
+		gap: 0.75rem;
+		width: 100%;
+		margin-top: 2rem;
+	}
+}
+
+.button {
+	@include media($max: $mobile) {
+		font-size: 0.875rem;
+		padding: 0.75rem 1.25rem !important;
+		flex: 0 1 auto; // Don't force equal width
+		min-width: auto;
+		max-width: none;
+		height: auto;
+		text-align: center;
+	}
+}
+
+// Utility classes
+.tempBright {
+	font-size: .875rem;
+	width: 60%;
+	text-align: left;
+	
+	@include media($max: $mobile) {
+		width: 100%;
+		padding: 0;
+		font-size: 1rem;
+		line-height: 1.5;
+		text-align: left; // Keep left aligned
+	}
+}
+
+.gitBadges {
+	position: relative;
+	display: flex;
+	gap: .5rem;
+	flex-wrap: wrap;
+	height: 1rem;
+	justify-content: flex-start;
+	
+	@include media($max: $mobile) {
+		justify-content: flex-start; // Keep left aligned
+	}
+	
+	img {
+		height: 16px;
+		width: fit-content;
+		border-radius: .25rem;
+	}
+}
+
+// Backgrounds - keep your existing background styles
+// Backgrounds - keep your existing background styles
 .colorfulV1 {
 	--hero-gradient-bg-1: var(--neon-1-1);
 	--hero-gradient-bg-2: var(--neon-1-2);
@@ -84,6 +247,7 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
+	z-index: 1;
 	
 	.svg_background {
 		position: absolute;
