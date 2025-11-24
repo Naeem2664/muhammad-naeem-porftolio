@@ -105,31 +105,23 @@
 	z-index: 3;
 	position: relative;
 	display: block;
-	width: 50%;
+	width: 50%; // Default for desktop
 	border-radius: 1rem;
 	flex-grow: 1;
 	flex-shrink: 0;
-
-	.imageAnimationContainer {
-		position: absolute;
-		overflow: hidden;
-		border-radius: 2rem;
-		height: calc(100% - 6rem);
-		width: calc(100% + 9rem);
-		right: 0;
-		bottom: 0;
-
-		> div > div {
-
-			> span {
-				position: absolute !important;
-				right: 4rem;
 	
-				img {
-					width: calc(556px / 1.25) !important;
-				}
-			}
-		}
+	// Add responsive behavior
+	@include media($max: $mobile) {
+		width: 100%; // Full width on mobile
+		height: auto; // Let content determine height
+		min-height: 200px; // Minimum height for mobile
+	}
+	
+	// Ensure images are responsive within the container
+	img {
+		max-width: 100%;
+		height: auto;
+		object-fit: contain; // Prevents distortion
 	}
 }
 
@@ -276,25 +268,36 @@
 				}
 			}
 
+			// FIX: Remove fixed height and let content flow naturally
 			.imageContainer {
-				height: 100px;
+				height: auto; // Changed from 100px
 				width: 100%;
+				padding: 1rem; // Reduced padding for mobile
 			}
 
+			// FIX: Remove absolute positioning issues on mobile
 			.imageAnimationContainer {
-				height: calc(100% + 6rem);
+				position: relative; // Changed from absolute
+				height: auto;
 				width: 100%;
 		
 				> div > div {
 					> span {
+						position: relative !important; // Changed from absolute
+						right: 0 !important; // Reset positioning
+						left: 0 !important;
+						
 						img {
-							width: calc(556px / 2) !important;
+							width: 100% !important; // Responsive width
+							height: auto !important;
 						}
 					}
 				}
 			}
 		}
 
+		// Remove these overrides as they're no longer needed
+		/*
 		&:nth-of-type(2n+1) {
 			.imageAnimationContainer {
 				> div > div {
@@ -314,6 +317,7 @@
 				}
 			}
 		}
+		*/
 	}
 	
 	.bgContainer {

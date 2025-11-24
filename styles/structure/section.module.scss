@@ -10,5 +10,9 @@
 }
 
 @include media($max: $mobile) {
+	.default {
+		padding-top: 200px;
+	}
+
 	
 }
