@@ -110,14 +110,12 @@
 	flex-grow: 1;
 	flex-shrink: 0;
 	
-	// Add responsive behavior
 	@include media($max: $mobile) {
 		width: 100%; // Full width on mobile
 		height: auto; // Let content determine height
 		min-height: 200px; // Minimum height for mobile
 	}
 	
-	// Ensure images are responsive within the container
 	img {
 		max-width: 100%;
 		height: auto;
