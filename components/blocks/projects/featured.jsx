@@ -26,47 +26,44 @@ export default function FeaturedProject({ content }, index) {
 	}, [ controls, inView ] )
 
 	return (
-		<m.section 	
+		<m.section
 			key={index}
-			className={css.project} 
+			className={css.project}
 			//framer-motion
 			ref={ref}
 			variants={container}
 			initial={[ "rest", "hidden" ]}
 			whileHover="hover"
 			animate={controls} >
-			
+
+			<div className={css.imageContainer}>
+				<span className={`${css.ImageSpan}`}>
+					{ images.map( ({key, url, hover, h, w }, index) => {
+						hover = ( hover === 'left' ) ? hoverLeft : hoverRight
+						return (
+							<m.div key={`${index}-${key}`} variants={item}>
+								<Image src={url} alt="x" height={h} width={w} />
+							</m.div>
+						)}
+					) }
+				</span>
+			</div>
 			<div className={css.details}>
 				<div className={css.projectHeader}>
 					<div className={css.header}>
-						<h3 className="highlight">{project}</h3><span className={css.privateOr}><i className="devicon-github-plain"></i>{repo}</span>	
+						<h3 className="highlight">{project}</h3>
+						<span className={css.privateOr}><i className="devicon-github-plain"></i>{repo}</span>
 					</div>
 					<div className={css.description}>
 						<p><strong>{descriptionTitle}</strong> {description}</p>
 					</div>
-					<div>
-						<a href={url} rel="noreferrer" target="_blank">Visit Site <Icon icon={[ 'far', 'arrow-up-right-from-square' ]} /></a>
-					</div>
 					<div className={css.stackContainer}>
 						<Badges list={stack} block="stack" fullContainer={false} color={false} />
 					</div>
-					
+					<div className={css.actions}>
+						<a href={url} rel="noreferrer" target="_blank"> <span>Visit Site</span> <Icon icon={[ 'far', 'arrow-up-right-from-square' ]} /></a>
+					</div>
 				</div>
-			</div>
-
-			<div className={css.imageContainer} style={{padding:'20px',borderRadius:'2rem'}}>
-				<span style={{padding:'10px'}} >
-					{ images.map( ({key, url, hover, h, w }, index) => {
-						hover = ( hover === 'left' ) ? hoverLeft : hoverRight
-						return (
-							<div key={`${index}-${key}`} variants={item}>
-								<div>
-									<Image src={url} alt="x" height={h} width={w} style={{borderRadius:'2rem'}} />
-								</div>
-							</div>
-						)}
-					) }
-				</span>
 			</div>
 		</m.section>
 	)

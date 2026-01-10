@@ -33,14 +33,14 @@ export default function Career() {
           <article className={career.company}>
             <div className={career.companyContent}>
               <span className={career.companyHeader}>
-                <h3>Codesinc</h3>
+                <h3>Menakta Tech</h3>
                 <h4>Full Stack Engineer</h4>
-                <h4>Oct 2025 – Nov 2025</h4>
-                <h5>Remote</h5>
+                <h4>Dec 2025 – Present</h4>
+                <h5>Onsite · Lahore, Pakistan</h5>
               </span>
               <p>
-                Worked on GeoEstate and NedTech, focusing on performance
-                optimization, reusable components, dynamic report generation,
+                Worked on Menakta Tech Official Website and currently working on OP Skillsim a web application for 3D simulation platform, focusing on performance
+                optimization, reusable components, interactive visualizations with WebRTC streaming,
                 and API integrations. Implemented dark theme support, improved
                 state management, and optimized rendering across complex UI
                 modules.
@@ -49,17 +49,20 @@ export default function Career() {
               <p>Key Contributions 👇</p>
               <ul className={career.list}>
                 <li>
-                  GeoEstate
+                  OP Skillsim
                   <span className={career.subList}>
-                    <span className={career.bullet}></span> Built expose
-                    templates & proxy layer for image restrictions
+                    <span className={career.bullet}></span> 
+                    A 3D simulation platform for learning and training in the field of
+                    plumbing and electrical engineering. Features real-time
+                    streaming, interactive visualizations with WebRTC, and
+                    API integrations.
                   </span>
                 </li>
                 <li>
-                  NedTech
+                Menakta Tech Official Website
                   <span className={career.subList}>
-                    <span className={career.bullet}></span> Enhanced UI
-                    performance & reusable architecture
+                    <span className={career.bullet}></span> An informative 3D website for Menakta Tech
+                    that showcases services, portfolio, and contact information
                   </span>
                 </li>
               </ul>
@@ -79,8 +82,8 @@ export default function Career() {
               <span className={career.companyHeader}>
                 <h3>Decimal Solution</h3>
                 <h4>Full Stack Developer</h4>
-                <h4>Feb 2025 – Sep 2025</h4>
-                <h5>Onsite · Pakistan</h5>
+                <h4>Jan 2025 – Nov 2025</h4>
+                <h5>Onsite · Islamabad, Pakistan</h5>
               </span>
               <p>
                 Full Stack Developer responsible for front-end modules, backend
@@ -131,9 +134,9 @@ export default function Career() {
             <div className={career.companyContent}>
               <span className={career.companyHeader}>
                 <h3>XpertSpot Systems</h3>
-                <h4>MERN Stack Intern</h4>
-                <h4>Mar 2023 – Dec 2023</h4>
-                <h5>On-site · Pakistan</h5>
+                <h4>MERN Stack Developer</h4>
+                <h4>Feb 2024 – Dec 2024</h4>
+                <h5>On-site · Rahim Yar Khan, Pakistan</h5>
               </span>
               <p>
                 Assisted in frontend development, backend integration, and bug
@@ -156,51 +159,52 @@ export default function Career() {
 }
 
 const fullStack = [
-  { key: "javascript", name: "JavaScript", type: "devicon" },
-  { key: "typescript", name: "TypeScript", type: "devicon" },
-  { key: "react", name: "React.js", type: "devicon" },
-  { key: "nextjs", name: "Next.js", type: "devicon" },
-  { key: "redux", name: "Redux Toolkit", type: "devicon" },
-  { key: "tailwindcss", name: "Tailwind CSS", type: "devicon" },
+  { key: "javascript", name: "JavaScript", },
+  { key: "webrtc", name: "WebRTC", },
+  { key: "typescript", name: "TypeScript", },
+  { key: "react", name: "React.js",  },
+  { key: "nextjs", name: "Next.js",  },
+  { key: "redux", name: "Redux Toolkit",  },
+  { key: "tailwindcss", name: "Tailwind CSS",  },
   { key: "mui", name: "MUI", type: "devicon" },
-  { key: "bootstrap", name: "Bootstrap", type: "devicon" },
-  { key: "nodejs", name: "Node.js", type: "devicon" },
+  { key: "bootstrap", name: "Bootstrap",  },
+  { key: "nodejs", name: "Node.js",  },
   {
     key: "express",
     name: "Express.js",
-    type: "custom",
+    
     url: "/img/logos/express.svg",
   },
-  { key: "rest", name: "REST APIs", type: "custom", url: "/img/logos/api.svg" },
-  { key: "jwt", name: "JWT Auth", type: "custom", url: "/img/logos/jwt.svg" },
-  { key: "mongodb", name: "MongoDB", type: "devicon" },
-  { key: "postgresql", name: "PostgreSQL", type: "devicon" },
-  { key: "mysql", name: "MySQL", type: "devicon" },
+  { key: "rest", name: "REST APIs",  url: "/img/logos/api.svg" },
+  { key: "jwt", name: "JWT Auth",  url: "/img/logos/jwt.svg" },
+  { key: "mongodb", name: "MongoDB",  },
+  { key: "postgresql", name: "PostgreSQL",  },
+  { key: "mysql", name: "MySQL",  },
   {
     key: "supabase",
     name: "Supabase",
-    type: "custom",
+    
     url: "/img/logos/supabase.svg",
   },
-  { key: "docker", name: "Docker", type: "devicon" },
-  { key: "aws", name: "AWS", type: "devicon" },
-  { key: "git", name: "Git", type: "devicon" },
+  { key: "docker", name: "Docker",  },
+  { key: "aws", name: "AWS",  },
+  { key: "git", name: "Git",  },
 ];
 
 const stack = [
-  { key: "javascript", name: "JavaScript", type: "devicon" },
-  { key: "react", name: "React.js", type: "devicon" },
-  { key: "nextjs", name: "Next.js", type: "devicon" },
-  { key: "redux", name: "Redux Toolkit", type: "devicon" },
-  { key: "nodejs", name: "Node.js", type: "devicon" },
+  { key: "javascript", name: "JavaScript",  },
+  { key: "react", name: "React.js",  },
+  { key: "nextjs", name: "Next.js",  },
+  { key: "redux", name: "Redux Toolkit",  },
+  { key: "nodejs", name: "Node.js",  },
   {
     key: "express",
     name: "Express.js",
-    type: "custom",
+    
     url: "/img/logos/express.svg",
   },
-  { key: "mongodb", name: "MongoDB", type: "devicon" },
-  { key: "tailwindcss", name: "Tailwind CSS", type: "devicon" },
-  { key: "mui", name: "MUI", type: "devicon" },
-  { key: "git", name: "Git", type: "devicon" },
+  { key: "mongodb", name: "MongoDB",  },
+  { key: "tailwindcss", name: "Tailwind CSS",  },
+  { key: "mui", name: "MUI",  },
+  { key: "git", name: "Git"  },
 ];

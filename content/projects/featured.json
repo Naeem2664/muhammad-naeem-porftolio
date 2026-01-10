@@ -1,5 +1,24 @@
 [
 	{
+		"project": "Menakta Tech",
+		"url": "https://menakta.com",
+		"repo": "Private",
+		"descriptionTitle": "3D Immersive Corporate Platform & Showcase",
+		"description": "An official company website featuring high-end 3D layouts and interactive components. Built with Three.js and Framer Motion for visual impact, and React Query for optimized server-state management.",
+		"imageOptions": [],
+		"images": [
+		  { "key": "menakta", "hover": "left", "h": "700", "w": "500", "url": "/img/msc-mock_stack/menakta.png" }
+		],
+		"stack": [
+		  { "key": "nextjs", "name": "Next.js", "type": "devicon" },
+		  { "key": "threejs", "name": "Three.js", "type": "custom", "url": "/img/logos/threejs.svg" },
+		  { "key": "framer-motion", "name": "Framer Motion", "type": "custom", "url": "/img/logos/framer.svg" },
+		  { "key": "react-query", "name": "TanStack Query", "type": "custom", "url": "/img/logos/react-query.svg" },
+		  { "key": "supabase", "name": "Supabase", "type": "custom", "url": "/img/logos/supabase.svg" },
+		  { "key": "tailwindcss", "name": "TailwindCSS", "type": "devicon" }
+		]
+	  },
+	{
 		"project": "NED Tech",
 		"url": "https://app.nedtech.ai/",
 		"repo": "Private",
@@ -131,7 +150,6 @@
 		{ "key": "express", "name": "Express.js", "type": "custom", "url": "/img/logos/express.svg" }
 	  ]
 	},
-  
 	{
 	  "project": "LeafEM",
 	  "url": "https://leafem-admin.vercel.app/",
@@ -175,4 +193,3 @@
 	  ]
 	}
   ]
-  

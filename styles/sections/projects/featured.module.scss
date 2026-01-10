@@ -1,3 +1,4 @@
+
 @import '../../scss/mixins';
 
 .hasBg {
@@ -5,121 +6,108 @@
 }
 
 .project {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	user-select: none;
+	display: grid;
+	padding: 10px;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 4rem;
+	position: relative;
+	border-radius: 1rem;
+	overflow: hidden;
+	background-color: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	transition: all 0.3s ease-in-out;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 
-	border-radius: 2rem;
-	background-color: var(--background-dim2);
-    border: 1px solid var(--primary-dark);
-
-	.viewProject svg {
-		@include transition;
-	}
-
-	&:nth-of-type(2n) {
-		flex-direction: row-reverse;
-	}
 
 	&:hover {
-		cursor: pointer;
-
-		.viewProject svg {
-			@include transition;
-			color: var(--neon-1-1);
-		}
+		transform: translateY(-10px);
+		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 	}
 }
 
-
-.projectHeader  {
+.details {
+	padding: 2rem;
 	display: flex;
 	flex-direction: column;
-	gap: var(--size-3x);
+	justify-content: center;
+}
 
-	p {
-		font-size: 1.75rem;
-		line-height: 1.2;
+.projectHeader {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+
+	.header {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+		color: var(--primary-bright);
+	}
+
+	.description p {
+		font-size: 1.1rem;
+		line-height: 1.6;
+		color: var(--primary-dim);
 
 		strong {
 			color: var(--primary-bright);
 		}
 	}
-
-	.viewProject {
-		svg {
-			height: 1.5rem;
-			color: var(--primary);	
-		}
-	}
-
-	.header {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		gap: 2rem;
-
-		a {
-			flex-grow: 0;
-			flex-shrink: 1;
-		}
-
-		.privateOr {
-			flex-grow: 0;
-			flex-shrink: 1;
-			height: fit-content;
-		}
-	}
-
 }
 
-.details {
-	display: flex;
-	flex-direction: column;
-	flex-grow: 0;
-	flex-shrink: 1;
-	gap: var(--size-3x);
-	overflow: hidden;
+.stackContainer {
+	margin-top: 1rem;
+}
 
-	padding: 2rem;
+.actions {
+	margin-top: 2rem;
+	a {
+		color: var(--primary-bright);
+		text-decoration: none;
+		font-weight: bold;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		transition: color 0.3s ease;
 
-	h3 {
-		position: relative;
-	}
+		&:hover {
+			color: var(--neon-1-1);
+		}
 
-	h4 {
-		margin-bottom: var(--size-1x);
-	}
+		svg {
+			transition: transform 0.3s ease;
+		}
 
-	ul {
-		z-index: 2;
-	}
-
-	img {
-		display: none;
+		&:hover svg {
+			transform: translateX(5px);
+		}
 	}
 }
 
 .imageContainer {
-	z-index: 3;
 	position: relative;
-	display: block;
-	width: 50%; // Default for desktop
-	border-radius: 1rem;
-	flex-grow: 1;
-	flex-shrink: 0;
-	
-	@include media($max: $mobile) {
-		width: 100%; // Full width on mobile
-		height: auto; // Let content determine height
-		min-height: 200px; // Minimum height for mobile
+	overflow: hidden;
+	min-height: 400px;
+	.ImageSpan{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
 	}
-	
+
 	img {
-		max-width: 100%;
-		height: auto;
-		object-fit: contain; // Prevents distortion
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.4s ease-in-out;
+	}
+
+	&:hover img {
+		transform: scale(1.05);
 	}
 }
 
@@ -141,7 +129,6 @@
 
 .bgContainer {
 	--opacity: 10%;
-
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -159,14 +146,10 @@
 		transform: translateX(50%);
 		filter: blur(200px);
 		opacity: var(--opacity);
-		// background: linear-gradient(180deg, rgb(41, 212, 112) 0%,  rgb(242, 240, 79) 100% );	
 		background: linear-gradient(180deg, var(--neon-1-1) 0%,  var(--neon-1-2) 100% );	
 	}
 
 	.orbitalBg {
-		// --left: linear-gradient(180deg, rgb(51, 205, 229) 0%,  rgb(229, 51, 140) 100% );
-		// --center: linear-gradient(180deg, rgb(41, 212, 112) 0%,  rgb(242, 240, 79) 100% );
-		// --right: linear-gradient(180deg, rgb(78, 21, 115) 0%,  rgb(103, 242, 79) 100% );
 		--left: linear-gradient(180deg, var(--neon-2-1) 0%,  var(--neon-2-2) 100% );
 		--center: linear-gradient(180deg, var(--neon-1-1) 0%,  var(--neon-1-2) 100% );
 		--right: linear-gradient(180deg, var(--neon-2-2) 0%,  var(--neon-1-1) 100% );
@@ -240,89 +223,14 @@
 
 @include media($max: $mobile) {
 	.project {
-		&:nth-of-type(n) {
-			flex-direction: column;
-
-			&:hover {
-				.details {
-					border-color: var(--primary-dim2);
-				}
-			}
-
-			.details {
-				border-radius: 1rem;
-				padding: var(--size-2x);
-			}
-
-			.stackContainer {
-				--padding-top: 1.5rem;
-
-				h4 { 
-					text-align: center;
-					display: none;
-				}
-				ul {
-					font-size: .6rem;
-				}
-			}
-
-			// FIX: Remove fixed height and let content flow naturally
-			.imageContainer {
-				height: auto; // Changed from 100px
-				width: 100%;
-				padding: 1rem; // Reduced padding for mobile
-			}
-
-			// FIX: Remove absolute positioning issues on mobile
-			.imageAnimationContainer {
-				position: relative; // Changed from absolute
-				height: auto;
-				width: 100%;
-		
-				> div > div {
-					> span {
-						position: relative !important; // Changed from absolute
-						right: 0 !important; // Reset positioning
-						left: 0 !important;
-						
-						img {
-							width: 100% !important; // Responsive width
-							height: auto !important;
-						}
-					}
-				}
-			}
-		}
-
-		// Remove these overrides as they're no longer needed
-		/*
-		&:nth-of-type(2n+1) {
-			.imageAnimationContainer {
-				> div > div {
-					> span {
-						right: 2rem;
-					}
-				}
-			}
-		}
-
-		&:nth-of-type(2n) {
-			.imageAnimationContainer {
-				> div > div {
-					> span {
-						right: 0rem;
-					}
-				}
-			}
-		}
-		*/
+		grid-template-columns: 1fr;
 	}
-	
-	.bgContainer {
-		.orbitalBg {
-			width: unset;
-			height: 100%;
-		}
+
+	.details {
+		padding: 1.5rem;
+	}
+
+	.imageContainer {
+		min-height: 300px;
 	}
 }
-
