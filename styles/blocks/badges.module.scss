@@ -3,7 +3,7 @@ $border: 		--primary-dark;
 $background: 	--background-dim2;
 
 
-@import 'styles/scss/mixins';
+@use '../scss/mixins' as *;
 
 .badgeBlockContainer{
 	&:not(:last-of-type) {

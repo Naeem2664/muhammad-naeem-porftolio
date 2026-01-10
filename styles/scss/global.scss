@@ -1,5 +1,6 @@
-@import '_variables';
-@import '_mixins';
+@import '../../../node_modules/devicon/devicon.min.css';
+@use 'variables' as *;
+@use 'mixins' as *;
 
 ::selection {
 	color: 		var(--background);
