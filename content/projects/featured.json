@@ -1,5 +1,28 @@
 [
 	{
+		"project": "OPNZ Plumbing Simulator",
+		"url": "https://op-skillsim.vercel.app",
+		"repo": "Private",
+		"descriptionTitle": "3D Web-based Training Platform with Unreal Engine 5 Integration.",
+		"description": "Developed a 3D web-based training platform integrated with real-time Unreal Engine 5 simulations, enabling immersive, browser-based training experiences. Owned the complete web layer end-to-end, including admin panel, student facing flows, JWT authentication, session management and user management. Utilized Next.js, TanStack Query, Supabase, and TailwindCSS for frontend development, for backend management using next api routes, and integrated with Unreal Engine 5 using interlucent for real-time simulation rendering.",
+		"imageOptions": [],
+		"images": [
+		  { "key": "op-skillsim", "hover": "left", "h": "700", "w": "500", "url": "/img/msc-mock_stack/op-skillsim.png" }
+		],
+		"stack": [
+		  { "key": "nextjs", "name": "Next.js", "type": "devicon" },
+		  { "key": "react-query", "name": "TanStack Query", "type": "custom" },
+		  { "key": "supabase", "name": "Supabase", "type": "custom"},
+		  { "key": "tailwindcss", "name": "TailwindCSS", "type": "devicon" },
+		  { "key": "unreal-engine", "name": "Unreal Engine 5", "type": "custom"},
+		  { "key": "interlucent", "name": "Interlucent", "type": "custom"},
+		  { "key": "jwt", "name": "JWT", "type": "custom"},
+		  { "key": "nodejs", "name": "Node.js", "type": "devicon" },
+		  { "key": "typescript", "name": "TypeScript", "type": "devicon" },
+		  {"key":"resend","name":"Resend","type":"custom"}
+		]
+	  },
+	{
 		"project": "Menakta Tech",
 		"url": "https://menakta.com",
 		"repo": "Private",
