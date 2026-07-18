@@ -82,7 +82,7 @@ export default function Career() {
               <span className={career.companyHeader}>
                 <h3>Decimal Solution</h3>
                 <h4>Full Stack Developer</h4>
-                <h4>Jan 2025 – Nov 2025</h4>
+                <h4>Mar 2024 – Nov 2025</h4>
                 <h5>Onsite · Islamabad, Pakistan</h5>
               </span>
               <p>
@@ -135,7 +135,7 @@ export default function Career() {
               <span className={career.companyHeader}>
                 <h3>XpertSpot Systems</h3>
                 <h4>MERN Stack Developer</h4>
-                <h4>Feb 2024 – Dec 2024</h4>
+                <h4>Mar 2023 – Feb 2024</h4>
                 <h5>On-site · Rahim Yar Khan, Pakistan</h5>
               </span>
               <p>
