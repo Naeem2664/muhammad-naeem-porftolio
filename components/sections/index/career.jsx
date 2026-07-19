@@ -36,7 +36,7 @@ export default function Career() {
                 <h3>Menakta Tech</h3>
                 <h4>Full Stack Engineer</h4>
                 <h4>Dec 2025 – Present</h4>
-                <h5>Onsite · Lahore, Pakistan</h5>
+                <h5>Onsite · Islamabad, Pakistan</h5>
               </span>
               <p>
                 Worked on Menakta Tech Official Website and currently working on OP Skillsim a web application for 3D simulation platform, focusing on performance

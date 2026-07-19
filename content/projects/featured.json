@@ -1,5 +1,29 @@
 [
 	{
+		"project": "Menakta Platform",
+		"url": "https://app.menakta.com",
+		"repo": "Private",
+		"descriptionTitle": "Enterprise Management Platform for Software Development Companies",
+		"description": "Developed a full-scale enterprise management platform covering project management, expense tracking, employee management, task management, and client management in a single unified system. Designed a scalable, modular architecture supporting multiple interconnected modules, enabling software development companies to manage end-to-end operations from one platform. Owned the complete web layer end-to-end, including module architecture, authentication, and user management across the system.",
+		"imageOptions": [],
+		"images": [
+		  { "key": "op-skillsim", "hover": "left", "h": "700", "w": "500", "url": "/img/msc-mock_stack/menakta-platform.png" }
+		],
+		"stack": [
+		  { "key": "nextjs", "name": "Next.js", "type": "devicon" },
+		  { "key": "react-query", "name": "TanStack Query", "type": "custom" },
+		  { "key": "nestjs", "name": "NestJS", "type": "devicon" },
+		  { "key": "supabase", "name": "Supabase", "type": "custom"},
+		  { "key": "tailwindcss", "name": "TailwindCSS", "type": "devicon" },
+		  { "key": "jwt", "name": "JWT", "type": "custom"},
+		  { "key": "nodejs", "name": "Node.js", "type": "devicon" },
+		  { "key": "typescript", "name": "TypeScript", "type": "devicon" },
+		  {"key":"resend","name":"Resend","type":"custom"},
+		  {"key":"docker","name":"Docker","type":"devicon"},
+		  {"key":"digitalocean","name":"DigitalOcean","type":"devicon"}
+		]
+	  },
+	{
 		"project": "OPNZ Plumbing Simulator",
 		"url": "https://op-skillsim.vercel.app",
 		"repo": "Private",
