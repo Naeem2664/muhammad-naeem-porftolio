@@ -36,6 +36,13 @@ export default function FeaturedProject({ content }, index) {
 			whileHover="hover"
 			animate={controls} >
 
+			<div className={css.projectHeader}>
+				<div className={css.header}>
+					<h3 className="highlight">{project}</h3>
+					<span className={css.privateOr}><i className="devicon-github-plain"></i>{repo}</span>
+				</div>
+			</div>
+
 			<div className={css.imageContainer}>
 				<span className={`${css.ImageSpan}`}>
 					{ images.map( ({key, url, hover, h, w }, index) => {
@@ -49,20 +56,14 @@ export default function FeaturedProject({ content }, index) {
 				</span>
 			</div>
 			<div className={css.details}>
-				<div className={css.projectHeader}>
-					<div className={css.header}>
-						<h3 className="highlight">{project}</h3>
-						<span className={css.privateOr}><i className="devicon-github-plain"></i>{repo}</span>
-					</div>
-					<div className={css.description}>
-						<p><strong>{descriptionTitle}</strong> {description}</p>
-					</div>
-					<div className={css.stackContainer}>
-						<Badges list={stack} block="stack" fullContainer={false} color={false} />
-					</div>
-					<div className={css.actions}>
-						<a href={url} rel="noreferrer" target="_blank"> <span>Visit Site</span> <Icon icon={[ 'far', 'arrow-up-right-from-square' ]} /></a>
-					</div>
+				<div className={css.description}>
+					<p><strong>{descriptionTitle}</strong> {description}</p>
+				</div>
+				<div className={css.stackContainer}>
+					<Badges list={stack} block="stack" fullContainer={false} color={false} />
+				</div>
+				<div className={css.actions}>
+					<a href={url} rel="noreferrer" target="_blank"> <span>Visit Site</span> <Icon icon={[ 'far', 'arrow-up-right-from-square' ]} /></a>
 				</div>
 			</div>
 		</m.section>

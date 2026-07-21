@@ -18,13 +18,16 @@ export default function FeaturedProjects() {
 					title="Featured Projects"
 					preTitle="MERN and Full Stack"
 					subTitle="Focused on the experience, driven by the engineering."
-				/> 				{
-				content.map( (data, index) => {
-					return (
-						<FeaturedProject content={data} index={index} key={index} />
-					)
-				})
-				}
+				/> 				
+				<div className={css.projectsGrid}>
+					{
+					content.map( (data, index) => {
+						return (
+							<FeaturedProject content={data} index={index} key={index} />
+						)
+					})
+					}
+				</div>
 			</Container>
 			<div className={css.bgContainer}>
 				<span className={css.orbitalBg}>
