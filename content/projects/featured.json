@@ -7,7 +7,7 @@
 		"description": "Developed a full-scale enterprise management platform covering project management, expense tracking, employee management, task management, and client management in a single unified system. Designed a scalable, modular architecture supporting multiple interconnected modules, enabling software development companies to manage end-to-end operations from one platform. Owned the complete web layer end-to-end, including module architecture, authentication, and user management across the system.",
 		"imageOptions": [],
 		"images": [
-		  { "key": "op-skillsim", "hover": "left", "h": "700", "w": "500", "url": "/img/msc-mock_stack/menakta-platform.png" }
+		  { "key": "op-skillsim", "hover": "left", "h": "500", "w": "500", "url": "/img/msc-mock_stack/menakta-platform.png" }
 		],
 		"stack": [
 		  { "key": "nextjs", "name": "Next.js", "type": "devicon" },
@@ -31,7 +31,7 @@
 		"description": "Developed a 3D web-based training platform integrated with real-time Unreal Engine 5 simulations, enabling immersive, browser-based training experiences. Owned the complete web layer end-to-end, including admin panel, student facing flows, JWT authentication, session management and user management. Utilized Next.js, TanStack Query, and TailwindCSS for frontend development, for backend management using next api routes and Supabase, and integrated with Unreal Engine 5 using interlucent for real-time simulation rendering.",
 		"imageOptions": [],
 		"images": [
-		  { "key": "op-skillsim", "hover": "left", "h": "700", "w": "500", "url": "/img/msc-mock_stack/op-skillsim.png" }
+		  { "key": "op-skillsim", "hover": "right", "h": "500", "w": "500", "url": "/img/msc-mock_stack/op-skillsim.png" }
 		],
 		"stack": [
 		  { "key": "nextjs", "name": "Next.js", "type": "devicon" },
@@ -54,7 +54,7 @@
 		"description": "An official company website featuring high-end 3D layouts and interactive components. Built with Three.js and Framer Motion for visual impact, and React Query for optimized server-state management.",
 		"imageOptions": [],
 		"images": [
-		  { "key": "menakta", "hover": "left", "h": "700", "w": "500", "url": "/img/msc-mock_stack/menakta.png" }
+		  { "key": "menakta", "hover": "right", "h": "500", "w": "500", "url": "/img/msc-mock_stack/menakta.png" }
 		],
 		"stack": [
 		  { "key": "nextjs", "name": "Next.js", "type": "devicon" },
@@ -73,7 +73,7 @@
 		"description": "A large-scale SaaS for email marketing, cold outreach, social media scheduling, ecommerce automation, Shopify store creation, and AI-generated content — built using React, Tailwind, Express, MongoDB and powered by Claude API.",
 		"imageOptions": [],
 		"images": [
-		  { "key": "nedtech", "hover": "left", "h": "500", "w": "500", "url": "/img/msc-mock_stack/nedtech.png" }
+		  { "key": "nedtech", "hover": "right", "h": "500", "w": "500", "url": "/img/msc-mock_stack/nedtech.png" }
 		],
 		"stack": [
 		  { "key": "react", "name": "React", "type": "devicon" },
